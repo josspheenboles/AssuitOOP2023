@@ -1,0 +1,33 @@
+print('2**2='+str(2**2))
+print('2**2=',2**2,2,2,1.2)
+"""
+x=float(input('enter num'))
+
+print(x,type(x))
+print(2**3)
+
+
+# varname=value
+number=1
+print(type(number),number)
+number=1.1
+print(type(number),number)
+number='one'
+print(type(number),number)
+number=True
+print(type(number),number)
+number=2+6j
+print(type(number),number)
+
+print('''
+os
+assuit
+''')
+
+print('2th file')
+print('okdoskdo')
+if(True):
+    print('1')
+    print('2')
+
+"""
