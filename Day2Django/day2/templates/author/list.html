@@ -1,0 +1,21 @@
+{%extends 'index.html' %}
+{%block title%}
+Authors
+{%endblock%}
+{%block content%}
+List authors
+<h1>
+    {#{{id}}
+    {%for x in authors%}
+        {%if x.id  == 10%}
+            {{x.id|add:x.id}}
+    {{x.name|linebreaks}}
+        {%endif%}
+    {%endfor%}
+#}
+</h1>
+{%for x in auth%}
+
+{{x.name}}
+{%endfor%}
+{%endblock%}

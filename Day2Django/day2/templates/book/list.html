@@ -1,0 +1,36 @@
+{%extends 'index.html'%}
+{%block title%}
+Books
+{%endblock%}
+
+{%block content%}
+<table border="1" width="100%">
+    <th>
+        <td>id</td>
+        <td>name</td>
+        <td>author name</td>
+        <td>actions</td>
+    </th>
+    {%for book in books%}
+        <tr>
+            <td>
+                {{book.id}}
+            </td>
+            <td>
+                {{book.name}}
+            </td>
+            <td>
+                {{book.authorobj.name}}
+            </td>
+            <td>
+                <a href="{%url 'bookedit' book.id %}">update</a>
+                <a href="{%url 'bookdel' book.id %}">delete</a>
+            </td>
+
+        </tr>
+
+    {%endfor%}
+</table>
+
+{%endblock%}
+
